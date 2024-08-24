@@ -1,0 +1,467 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.315);
+    
+    
+   
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+   
+}
+.logoimg{
+     width: 110px; 
+     
+     
+}
+.paw{
+    color: rgb(67, 66, 66);
+}
+#check{
+    display: none;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    padding-left: 360px;
+    margin-top: -38px;
+    color: white;
+    align-items: center;
+
+    
+}
+.buynow:hover{
+    background-color: #020202;
+
+}
+#menuIcon{
+    display: none;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(199, 159, 85, 0.363);
+    text-align: center;
+    width: 100%;
+
+}
+.navlink{
+    padding: 7px 0px;
+    text-decoration: none;
+    color: white;
+}
+.navlink:hover{
+    color: rgb(255, 113, 61);
+}
+
+#check:checked~.icons #closeIcon{
+    
+    display: none;
+}
+#check:checked~.icons~nav{
+    display: none;
+}
+#check:checked~.icons #menuIcon{
+    display: block;
+}
+#check:checked~.icons #closeIcon{
+    display: none;
+}
+.mainbody{
+    background-image: url(/Images/mypaw.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    width: 100%;
+    height: 122vh;
+
+}
+.welcome{
+   color: white;
+   text-align: center;
+   margin-top: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    
+}
+
+.lovepet{
+    background-image: url(/Images/girl11.png);
+    width: 50%;
+    height: 30%;
+    background-size:cover;
+    align-items: center;
+    margin-left: 24%;
+    background-attachment:scroll;
+    
+    
+}
+.homehead{
+    
+    
+   padding: 0%;
+}
+.headimg{
+
+    width: 100%;
+    height: 15vh;
+    opacity: 0.2;
+}
+.head{
+    position: absolute;
+    margin-left:50%;
+    margin-top: 1%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 700;
+    padding-top:0.5rem;
+    color: white;
+}
+.row1{
+    display: none;
+}
+.row{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1rem 1rem;
+    
+        
+}
+.galary{
+    width: 100%;
+    height:100vh;
+}
+
+
+
+.subhead>h2{
+    padding: 8px 2rem;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: -25px;
+}
+
+.pet{
+    transition: transform 0.2s;
+    margin: 0rem 0.5rem;
+    transform: scale(0.7);
+
+}
+.pet:hover{
+    transform: scale(0.82);
+}
+.bg{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    
+}
+.sub{
+    font-size: 14px;
+    text-align: center;
+    padding: 0.8rem 0px;
+}
+.pet>a{
+    text-decoration: none;
+    color: rgb(95, 38, 38);
+    font-size: 12px;
+    margin-left: 45%;
+    padding: 0.2rem;
+    background-color:orangered;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+.row2{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    background-color:rgba(83, 80, 79, 0.151);
+    margin-top: 6%;
+    padding-left:2rem;
+    
+}
+.span{
+    display: block;
+}
+.col2{
+    padding-top: 1rem;
+    color: black;
+    font-family: "Montserrat", system-ui;
+    font-weight: 400;
+    cursor: pointer;
+}
+.colright{
+    padding-top: 1rem;
+    color: black;
+    cursor: pointer;
+    text-align: right;
+    background-color:rgba(83, 80, 79, 0.151);
+
+}
+.col2>p{
+    padding-top: 0.5rem;
+}
+.col2>a{
+    display: block;
+    padding: 0.5rem 0px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+.col2>a>i{
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+
+}
+.col2>i{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.col2>i:hover{
+    color: white;
+    
+}
+footer>p{
+    text-align: center;
+    background-color:rgba(83, 80, 79, 0.151);
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(245, 211, 234);
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
+@media(min-width:900px){
+#check {
+    display: none;
+}
+.mainbody{
+    background-image: url(/Images/mypaw.jpg);
+    background-size:100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.icons{
+    display: none;
+}
+#check:checked~.icons~nav{
+    display: block;
+}
+.main{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+}
+.logoimg{
+    width: 150px;
+    
+    
+
+}
+nav{
+    display: inline;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+.navlink{
+    border: none;
+    font-size: 1.5rem;
+    padding: 0px 1.2rem;
+    font-weight: 600;
+ 
+}
+.headimg{
+
+    width: 100%;
+    height: 100%;
+}
+
+.homehead{
+    height: 85vh;
+    
+}
+.head{
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 5px #141414;
+}
+.row1{
+    display: block;
+   text-align: center;
+   margin-top: -5px;
+   padding: 0px 4rem;
+   background-color: black;
+   color:white;
+
+   text-shadow: 20px;
+}
+.col>h1{
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgb(150, 98, 80);
+}
+.col>p{
+    font-size: 25px;
+    padding: 0.5rem 0px;
+    font-family: "Montserrat", system-ui;
+    font-weight: 500;
+    font-style: italic;
+}
+span{
+    color: orangered;
+}
+
+
+.homesub{
+    margin-top: 8%;
+    text-align: center;
+    font-size: xx-large;
+}
+.galary{
+    width: 100%;
+    height:100vh;
+    background-color: aqua;
+
+}
+.subhead>h2{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.row{
+    grid-template-columns: repeat(4,1fr);
+    margin:1rem 1rem;
+}
+
+.sub{
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+.bg{
+    object-fit: fill;
+}
+.pet>a{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: rgb(143, 143, 143);
+    margin-left: 45%;
+    
+    
+}
+
+.row2{
+    grid-template-columns: repeat(1,1fr);
+
+    color: white;
+    
+    
+}
+.col2{
+    cursor: pointer;
+    
+}
+.col2>h3{
+    font-size: 2rem;
+}
+.col2>p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.col2>a{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.col2>a>i{
+    font-size: 1.5rem;
+}
+.col2>i{
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+}
+.span{
+  color: white;
+}
+footer>p{
+    font-size: 1.5rem;
+}
+.pet{
+    transition: transform 0.2s;
+    margin: 0rem 0.rem;
+    transform: scale(.7);
+    gap: 0px;
+    
+
+
+}
+.pet:hover{
+    transform: scale(.8);
+}
+.welcome{
+    padding-top: 15%;
+    padding-left: 5%;
+    font-size: 500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+.lovepet{
+ display: none;
+    
+}
+}
+@media(max-width:700px){
+    .row{
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 1rem 1rem;
+        
+            
+    }
+    .mainbody{
+        background-image: url(/Images/mypaw.jpg);
+        background-size:cover;
+        background-attachment: fixed;
+        display: flex;
+        width: 100%;
+        height: 90vh;
+    
+    }
+    .lovepet{
+    display: none;
+    }
+}
+
